@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/config.xsd">
+    <default>
+        <grinet_not_found_code>
+            <general>
+                <is_active>1</is_active>
+                <custom_404_code>410</custom_404_code>
+            </general>
+        </grinet_not_found_code>
+    </default>
+</config>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="grinet" translate="label comment" sortOrder="999999990">
+            <label>Grinet</label>
+        </tab>
+
+        <section id="grinet_not_found_code" translate="label" showInDefault="1" showInWebsite="1" showInStore="1">
+            <tab>grinet</tab>
+            <label>Custom 404 (Not Found) Code</label>
+            <class>separator-top</class>
+            <resource>Grinet_NotFoundCode::system_config</resource>
+
+            <group id="general" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General Settings</label>
+                <comment><![CDATA[If you enable this extension system will return the configured HTTP status code instead of 404]]></comment>
+
+                <field id="is_active" translate="label comment" sortOrder="10" type="select" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Is Active ?</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+
+                <field id="custom_404_code" translate="label comment" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Custom 404 Code</label> 
+                    <comment><![CDATA[If left empty, the system will return 404 as status]]></comment> 
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework/ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\HTTP\PhpEnvironment\Response">
+        <plugin name="grinet_notfoundcode_response_plugin" type="Grinet\NotFoundCode\Plugin\ResponsePlugin" />
+    </type>
+</config>
